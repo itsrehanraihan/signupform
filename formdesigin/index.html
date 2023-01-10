@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Student Zone</title>
+    <link rel="shortcut icon" href="./assets/ArchSphereAndTriangle.svg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!--
+    - Sign Up Page
+    - Rehan Raihan
+    - 550549
+    -->
+</head>
+<body>
+    <section>
+        <div class="grid">
+            <div class="col left">
+                <div class="form_wrapper">
+                    <div class="header_content">
+                        <h3>Create an account</h3>
+                        <p>Sign up for a student account!</p>
+                    </div>
+                    <form action="">
+                        <div class="field">
+                            <label for="name">Name</label>
+                            <input name="name" type="text" placeholder="Enter your name" id="name" required>
+                        </div>
+                        <div class="row">
+                            <div class="field">
+                                <label for="semester">Semester</label>
+                                <select name="semester" id="semester">
+                                    <option value="1">1st</option>
+                                    <option value="2">2nd</option>
+                                    <option value="3">3rd</option>
+                                    <option value="4">4th</option>
+                                    <option value="5">5th</option>
+                                    <option value="6">6th</option>
+                                    <option value="7">7th</option>
+                                    <option value="8">8th</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label for="number">Roll</label>
+                                <input name="roll" type="number" placeholder="Enter your roll" id="number" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="email">Email</label>
+                            <input name="email" type="email" placeholder="Enter your email" id="email" autocomplete="email" required>
+                        </div>
+                        <div class="field">
+                            <label for="password">Password</label>
+                            <input name="passwoord" type="password" placeholder="Enter your password" id="password" minlength="8" maxlength="12" required>
+                            <div class="pass">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.7366 8.45018C18.8671 9.39091 19.4324 9.86127 19.6876 11.3022C19.7427 11.6131 19.7427 12.3869 19.6876 12.6978C19.4324 14.1387 18.8671 14.6091 17.7366 15.5498C16.1791 16.8458 14.1801 18 12 18C9.81991 18 7.82086 16.8458 6.26343 15.5498C5.13291 14.6091 4.56765 14.1387 4.31236 12.6978C4.25727 12.3869 4.25727 11.6131 4.31236 11.3022C4.56765 9.86127 5.13291 9.39091 6.26343 8.45018C7.82086 7.15422 9.81991 6 12 6C14.1801 6 16.1791 7.15422 17.7366 8.45018Z" stroke="#DDDDDD" stroke-width="2"/>
+                                    <circle cx="12" cy="12" r="3" stroke="#DDDDDD" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col right" id="js-scene">
+                <img class="layer" data-speed="-9" src="./assets/ArchSphereAndTriangle.svg" loading="lazy" alt="3d Arch Spear Model - dora design ui">
+                <img class="layer" data-speed="-3" src="./assets/PointedCylinderBase.svg" loading="lazy" alt="3d Pointed Cylendar Model - dora design ui">
+                <img class="layer" data-speed="4" src="./assets/TriGems.svg" loading="lazy" alt="3d Tri Gems Model - dora design ui">
+                <img class="layer" data-speed="2" src="./assets/UserShapes.svg" loading="lazy" alt="3d User Shapes Model - dora design ui">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
